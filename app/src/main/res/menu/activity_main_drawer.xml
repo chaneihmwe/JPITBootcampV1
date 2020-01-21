@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_house"
+            android:title="@string/menu_home"/>
+        <item
+            android:id="@+id/nav_batch"
+            android:icon="@drawable/ic_menu_lists"
+            android:title="@string/menu_batch"/>
+        <item
+            android:id="@+id/nav_student"
+            android:icon="@drawable/ic_menu_students"
+            android:title="@string/menu_student"/>
+    </group>
+</menu>

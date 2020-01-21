@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.jpitbootcamp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_batch"
+            app:destination="@id/nav_batch" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_student"
+        android:name="com.example.jpitbootcamp.ui.student.StudentFragment"
+        android:label="@string/menu_student" >
+        <action
+            android:id="@+id/action_nav_student_to_createStudentFragment"
+            app:destination="@id/createStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_batch"
+        android:name="com.example.jpitbootcamp.ui.batch.BatchFragment"
+        android:label="@string/menu_batch" >
+        <action
+            android:id="@+id/action_nav_batch_to_createBatchFragment"
+            app:destination="@id/createBatchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createBatchFragment"
+        android:name="com.example.jpitbootcamp.CreateBatchFragment"
+        android:label="fragment_create_batch"
+        tools:layout="@layout/fragment_create_batch" >
+        <action
+            android:id="@+id/action_createBatchFragment_to_nav_batch"
+            app:destination="@id/nav_batch" />
+    </fragment>
+    <fragment
+        android:id="@+id/createStudentFragment"
+        android:name="com.example.jpitbootcamp.CreateStudentFragment"
+        android:label="fragment_create_student"
+        tools:layout="@layout/fragment_create_student" >
+        <action
+            android:id="@+id/action_createStudentFragment_to_nav_student"
+            app:destination="@id/nav_student" />
+    </fragment>
+
+</navigation>

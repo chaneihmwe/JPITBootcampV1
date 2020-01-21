@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">JPITBootcamp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">JPIT Bootcamp</string>
+    <string name="nav_header_subtitle">jpit.bootcamp@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_batch">Batch</string>
+    <string name="menu_student">Student</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="batch_array">
+        <item>Batch I</item>
+        <item>Batch II</item>
+        <item>Batch III</item>
+        <item>Batch IV</item>
+    </string-array>
+</resources>
