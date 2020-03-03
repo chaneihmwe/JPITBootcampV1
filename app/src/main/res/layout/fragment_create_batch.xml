@@ -8,20 +8,28 @@
 
     <EditText
         android:id="@+id/edit_batch_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:hint="Enter Batch Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@drawable/transparent_background"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="@color/colorBlue"
+        android:textColorHint="@color/colorBlue"/>
     <Button
         android:id="@+id/add_batch_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
         app:layout_constraintTop_toBottomOf="@id/edit_batch_name"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/round_coners_btn"/>
-
-
+        android:background="@drawable/round_corners_btn"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

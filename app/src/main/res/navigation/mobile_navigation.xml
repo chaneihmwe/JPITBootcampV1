@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_nav_home_to_nav_batch"
             app:destination="@id/nav_batch" />
+        <action
+            android:id="@+id/action_nav_home_to_createStudentFragment"
+            app:destination="@id/createStudentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
     </fragment>
 
     <fragment
@@ -22,6 +28,9 @@
         <action
             android:id="@+id/action_nav_student_to_createStudentFragment"
             app:destination="@id/createStudentFragment" />
+        <action
+            android:id="@+id/action_nav_student_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_batch"
@@ -33,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/createBatchFragment"
-        android:name="com.example.jpitbootcamp.CreateBatchFragment"
+        android:name="com.example.jpitbootcamp.ui.batch.CreateBatchFragment"
         android:label="fragment_create_batch"
         tools:layout="@layout/fragment_create_batch" >
         <action
@@ -42,12 +51,17 @@
     </fragment>
     <fragment
         android:id="@+id/createStudentFragment"
-        android:name="com.example.jpitbootcamp.CreateStudentFragment"
+        android:name="com.example.jpitbootcamp.ui.student.CreateStudentFragment"
         android:label="fragment_create_student"
         tools:layout="@layout/fragment_create_student" >
         <action
             android:id="@+id/action_createStudentFragment_to_nav_student"
             app:destination="@id/nav_student" />
     </fragment>
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.example.jpitbootcamp.ui.student.StudentDetailFragment"
+        android:label="fragment_student_detail"
+        tools:layout="@layout/student_detail" />
 
 </navigation>

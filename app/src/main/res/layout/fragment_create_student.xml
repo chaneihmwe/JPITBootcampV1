@@ -8,31 +8,40 @@
 
     <Spinner
         android:id="@+id/batch_spinner"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.4"
+        android:background="@drawable/transparent_background"
         />
     <EditText
         android:id="@+id/edit_student_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:hint="Enter student name"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/batch_spinner"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="@id/batch_spinner"
+        android:background="@drawable/transparent_background"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="@color/colorBlue"
+        android:textColorHint="@color/colorBlue"
+        />
     <Button
         android:id="@+id/add_student_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/edit_student_name"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/round_coners_btn"/>
+        android:background="@drawable/round_corners_btn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

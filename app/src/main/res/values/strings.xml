@@ -19,4 +19,8 @@
         <item>Batch III</item>
         <item>Batch IV</item>
     </string-array>
+
+    <string name="assignment_one">Assignment One</string>
+    <string name="assignment_two">Assignment Two</string>
+    <string name="assignment_three">Assignment Three</string>
 </resources>

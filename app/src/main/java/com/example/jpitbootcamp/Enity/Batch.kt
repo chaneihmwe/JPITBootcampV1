@@ -4,10 +4,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "batch")
-class Batch {
+@Entity(tableName = "batches")
+class Batch (
     @PrimaryKey(autoGenerate = true)
-    var id:Int = 0
-    @ColumnInfo(name = "batchName")
-    var batchName:String=""
-}
+    var id:Int,
+    @ColumnInfo(name = "batch_name")
+    var batchName:String
+)
